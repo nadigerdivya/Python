@@ -1,8 +1,5 @@
 # DeepCopy.py
 
-import imp
-
-
 import copy
 
 ex1 = [1, 2, 3, 4]
