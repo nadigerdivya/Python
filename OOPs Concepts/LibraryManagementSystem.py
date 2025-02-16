@@ -1,6 +1,3 @@
-from dbm.ndbm import library
-
-
 # LibraryManagementSystem.py
 
 # Library Management System
@@ -19,7 +16,7 @@ class LibraryManagementSystem :
         "Python For Data Analysis" : "Available"
     }
 
-    # initial function and to ask to borrow
+    # initial function for user input
     def init(self) :
         self.displayList()
 
