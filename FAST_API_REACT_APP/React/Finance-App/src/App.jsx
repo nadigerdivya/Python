@@ -4,13 +4,6 @@ import api from './api'
 
 function App() {
   const [transactions, setTransactions] = useState([]);
-  const [formData, setFormData] = useState({
-    amount: '',
-    category: '',
-    description: '',
-    is_income: false,
-    date: ''
-  })
   const currentYear = new Date().getFullYear();
 
   //input refs
@@ -21,8 +14,7 @@ function App() {
   const dateRef = useRef(null);
 
   //Form Submit
-  const handleSubmit = async (event) => {
-    //event.preventDefault(); // Prevent form refresh
+  const handleSubmit = async () => {
 
     let transactionObj = {
       amount: amountRef.current.value,
